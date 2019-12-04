@@ -1,6 +1,6 @@
 # SQL to Pandas
 
-Shortcuts.
+#### Shortcuts
 
 | Query  	| SQL                  	| Pandas            	|
 |--------	|----------------------	|-------------------	|
@@ -8,3 +8,16 @@ Shortcuts.
 | Select 	| SELECT a,b,c FROM df 	| df[['a','b','c']] 	|
 |        	|                      	|                   	|
 |        	|                      	|                   	|
+
+#### SQL
+
+Interview Prep: https://www.w3schools.com/sql/
+
+Practice problems: 
+
+
+#### Pandas
+
+Interview Prep:
+
+Practice problems:
