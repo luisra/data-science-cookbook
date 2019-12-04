@@ -10,7 +10,7 @@
 | Select | SELECT a,b,c FROM df                   | df[['a','b','c']]                    |
 | Where  | SELECT * FROM df WHERE a = 1           | df[df['a'] == 1]                     |
 | And    | SELECT * FROM df WHERE a = 1 AND b = 2 | df[(df['a'] == 1) & (df['b'] == 2)]  |
-| Or     | SELECT * FROM df WHERE a = 1 OR b = 2  | df[(df['a'] == 1)  <code>&#124;</code> (df['b'] == 2)]  |
+| Or     | SELECT * FROM df WHERE a = 1 OR b = 2  | <code>df[(df['a'] == 1) &#124; (df['b'] == 2)] </code>  |
 | Not    | SELECT * FROM df WHERE a != 1          | df[df['a'] != 1]                     |
 
 #### SQL
