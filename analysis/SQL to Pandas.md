@@ -1,6 +1,6 @@
 # SQL to Pandas
 
-#### Shortcuts
+#### Shortcuts (in progress...)
 
 | Query  | SQL                                    | Pandas                               |
 |--------|----------------------------------------|--------------------------------------|
