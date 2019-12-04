@@ -2,12 +2,13 @@
 
 #### Shortcuts
 
-| Query  	| SQL                  	| Pandas            	|
-|--------	|----------------------	|-------------------	|
-| Select 	| SELECT * FROM df     	| df                	|
-| Select 	| SELECT a,b,c FROM df 	| df[['a','b','c']] 	|
-|        	|                      	|                   	|
-|        	|                      	|                   	|
+| Query  | SQL                       | Pandas               |
+|--------|---------------------------|----------------------|
+| Select | SELECT * FROM df          | df                   |
+| Select | SELECT DISTINCT * FROM df | df.drop_duplicates() |
+| Select | SELECT * FROM df LIMIT 5  | df.head()            |
+| Select | SELECT a,b,c FROM df      | df[['a','b','c']]    |
+|        |                           |                      |
 
 #### SQL
 
