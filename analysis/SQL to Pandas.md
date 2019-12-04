@@ -13,11 +13,11 @@
 
 Interview Prep: https://www.w3schools.com/sql/
 
-Practice problems: 
+Practice Problems: https://www.richardtwatson.com/dm6e/Reader/ClassicModels.html
 
 
 #### Pandas
 
 Interview Prep:
 
-Practice problems:
+Practice Problems:
