@@ -2,16 +2,26 @@
 
 #### Shortcuts (in progress...)
 
-| Query  | SQL                                    | Pandas                               |
-|--------|----------------------------------------|--------------------------------------|
-| Select | SELECT * FROM df                       | <code> df </code>                                 |
-| Select | SELECT DISTINCT * FROM df              | <code> df.drop_duplicates() </code>                |
-| Select | SELECT * FROM df LIMIT 5               | <code> df.head() </code>                           |
-| Select | SELECT a,b,c FROM df                   | <code> df[['a','b','c']] </code>                    |
-| Where  | SELECT * FROM df WHERE a = 1           | <code> df[df['a'] == 1] </code>                     |
-| And    | SELECT * FROM df WHERE a = 1 AND b = 2 | <code> df[(df['a'] == 1) & (df['b'] == 2)] </code>  |
-| Or     | SELECT * FROM df WHERE a = 1 OR b = 2  | <code> df[(df['a'] == 1) &#124; (df['b'] == 2)] </code>  |
-| Not    | SELECT * FROM df WHERE a != 1          | <code> df[df['a'] != 1] </code>                     |
+| Query           | SQL                                      | Pandas                                   |
+|-----------------|------------------------------------------|------------------------------------------|
+| Select All      | SELECT * FROM df                         | df                                       |
+| Select          | SELECT a,b,c FROM df                     | df[['a','b','c']]                        |
+| Select Distinct | SELECT DISTINCT * FROM df                | df.drop_duplicates()                     |
+| Select Top      | SELECT * FROM df LIMIT 5                 | df.head()                                |
+| Where           | SELECT * FROM df WHERE a = 1             | df[df['a'] == 1]                         |
+| And             | SELECT * FROM df WHERE a = 1 AND b = 2   | df[(df['a'] == 1) & (df['b'] == 2)]      |
+| Or              | SELECT * FROM df WHERE a = 1 OR b = 2    | df[(df['a'] == 1) <code>&#124;</code> (df['b'] == 2)]      |
+| Not             | SELECT * FROM df WHERE a != 1            | df[df['a'] != 1]                         |
+| Order By        | SELECT * FROM df ORDER BY a              | df.sort_values(by=['a'], ascending=True) |
+| Null            | SELECT * FROM df WHERE a IS NULL         | df[df['a'].isna()]                       |
+| Not Null        | SELECT * FROM df WHERE a IS NOT NULL     | df[df['a'].notnull()]                    |
+| Min             | SELECT MIN(a) FROM df                    | df['a'].min()                            |
+| Max             | SELECT MAX(a) FROM df                    | df['a'].max()                            |
+| Count           | SELECT COUNT(*) FROM df                  | df.shape[0]                              |
+| Average         | SELECT AVG(a) FROM df                    | df['a'].mean()                           |
+| Sum             | SELECT SUM(a) FROM df                    | df['a'].sum()                            |
+| In              | SELECT * FROM df WHERE a IN (1,2,3)      | df[df['a'].isin([1,2,3])                 |
+| Between         | SELECT * FROM df WHERE a BETWEEN 1 AND 5 | df[(df['a'] >= 1) & (df['a'] <= 5)]      |
 
 #### SQL
 
