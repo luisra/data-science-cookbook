@@ -1,3 +1,3 @@
 # Data Science Cookbook
 
-Cheat Sheet
+Quickstart Guide
